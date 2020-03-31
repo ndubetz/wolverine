@@ -17,3 +17,5 @@ For programming purposes, the blue led is connected to PD2, and the yellow led i
 ## Software
 
 We'll be using gcc's AVR toolchain to compile and link our softare.  CMake will be used to manage both the target build and the test build.
+
+Testing is done using the [Unity](http://www.throwtheswitch.org/unity) testing suite.
