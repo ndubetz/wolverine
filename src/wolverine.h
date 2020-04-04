@@ -3,8 +3,9 @@
 
 
 extern void (*setup_yellow_led)(void);
-
 void setup_yellow_led_impl();
+
+void yellow_led_on(void);
 
 void wolverine_setup(void);
 void wolverine_loop(void);
