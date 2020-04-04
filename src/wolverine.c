@@ -1,4 +1,16 @@
 #include "wolverine.h"
+#include <avr/io.h>
 
-void wolverine_setup(void) {}
+void (*setup_yellow_led)(void) = setup_yellow_led_impl;
+
+void setup_yellow_led_impl()
+{
+    DDRD = _BV(DDD3);
+}
+
+void wolverine_setup(void) 
+{
+    setup_yellow_led();
+}
+
 void wolverine_loop(void) {}
