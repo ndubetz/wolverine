@@ -1,3 +1,5 @@
 kyron.txt
 build/
 final/
+target/
+.vscode/
